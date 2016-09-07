@@ -3,3 +3,29 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* ===================================== */
+/* ========== BANNER STYLE ============= */
+/* ===================================== */
+.banner{
+    background: #333;
+    padding: 25px 0 25px 0;
+    background: url('../images/banner.jpg');
+    background-size: cover;
+}
+
+.banner .country{
+    color: #FFF;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+}
+.banner .legal{
+    color: #D3D3D3;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+/* ===================================== */
+/* ======== / END BANNER STYLE ========= */
+/* ===================================== */

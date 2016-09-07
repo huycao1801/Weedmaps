@@ -13,13 +13,14 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
 body {
     font-size: 15px;
-/*    color: #6e6e6e;*/
     background: #fdfdfd;
     font-family: "Open Sans", Tahoma, Arial, Sans-Serif;
     height: 100%;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden !important;
 }
+
 form {
     margin: 0
 }
@@ -97,7 +98,88 @@ footer {
 
 }
 
+header .header-wrap{
+    background: #333;
+    display: inline-block;
+    width: 100%;
+}
+header .header-wrap .search{
+    color: #FFF;
+    font-size: 20px;
+    float: right;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+header .nav-btn{
+    display: block;
+}
+header .nav-btn button{
+    margin-right: 0px;
+}
+header .nav-btn{
+    display: block !important;
+}
+header .nav-btn span{
+    background-color: #FFF;
+}
+header .current-page{
+    margin-top: 14px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFF;
+    display: inline-block;
+}
 
+
+@media (min-width: 768px){    /* MAKE NAV BUTTON ALWAYS APPEAR */
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+.sidebar-offcanvas{
+    height: 100%;
+    background: rgba(0,66,0,1);
+    background: -moz-linear-gradient(45deg, rgba(0,66,0,1) 0%, rgba(0,66,0,1) 28%, rgba(0,0,0,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,66,0,1)), color-stop(28%, rgba(0,66,0,1)), color-stop(100%, rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(45deg, rgba(0,66,0,1) 0%, rgba(0,66,0,1) 28%, rgba(0,0,0,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(0,66,0,1) 0%, rgba(0,66,0,1) 28%, rgba(0,0,0,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(0,66,0,1) 0%, rgba(0,66,0,1) 28%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(45deg, rgba(0,66,0,1) 0%, rgba(0,66,0,1) 28%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004200', endColorstr='#000000', GradientType=1 );
+}
+.sidebar-offcanvas .logo{
+    display: block;
+    height: auto;
+}
+.sidebar-offcanvas .logo img{
+    display: inline-block;
+    width: 100px;
+    height: auto;
+}
+.sidebar-offcanvas .menu{
+    padding-left: 20px;
+    margin-top: 100px;
+}
+.sidebar-offcanvas .menu li{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.sidebar-offcanvas .menu li a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #d3d3d3;
+    -webkit-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+.sidebar-offcanvas .menu li a:hover, .sidebar-offcanvas .menu li a:focus, .sidebar-offcanvas .menu li.active{
+    color: #FFF;
+    font-size: 20px;
+}
 /* =================================================================== */
 /* ===================== / END HEADER STYLE ========================== */
 /* =================================================================== */
